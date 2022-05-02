@@ -1,0 +1,63 @@
+#circle-checkbox {
+    display: inline-block;
+
+    .checkbox-wrap {
+        display: inline-block;
+        position: relative;
+
+        #circle-checkmark-wrap {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .circle-checkmark {
+            position: relative;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+        }
+        .circle-checkmark::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            height: 50%;
+            width: 3px;
+            background-color: #336699;
+            content: "";
+            transform: translateX(10px) rotate(-45deg);
+            transform-origin: left bottom;
+        }
+
+        .circle-checkmark::after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            background-color: #336699;
+            content: "";
+            transform: translateX(10px) rotate(-45deg);
+            transform-origin: left bottom;
+        }
+
+        .checkbox {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            background-color: #cecece;
+            border-radius: 50%;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+            font-size: 1em;
+        }
+    }
+    .checkbox-label-wrap {
+        display: inline-block;
+        height: 10px;
+        line-height: 10px;
+        vertical-align: bottom;
+        margin-left: 10px;
+    }
+}

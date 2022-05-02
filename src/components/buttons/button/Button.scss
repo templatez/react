@@ -1,13 +1,13 @@
 #common-button {
+    display: inline-block;
 
     .btn {
-        display: inline-block;
         border: none;
         text-decoration: none;
         cursor: pointer;
         padding: 10px 20px;
         margin: 0;
-        background-color: #00A0FF;
+        background-color: #00a0ff;
         color: #fff;
         border-radius: 5px;
         font-size: 30px;
