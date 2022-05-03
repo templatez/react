@@ -13,21 +13,14 @@ const Template: ComponentStory<typeof CheckBox> = (args) => (
     <CheckBox {...args} />
 );
 
-export const HelloWorld: any = Template.bind({});
+export const CircleCheckBox: any = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-HelloWorld.args = {
-    label: "Hello world!",
-    size: 10,
-};
-
-export const ClickMe2: any = Template.bind({});
-ClickMe2.args = {
-    label: "Click me!",
-    size: 20,
-};
-
-export const ClickMe: any = Template.bind({});
-ClickMe.args = {
-    label: "Click me!",
-    size: 30,
+CircleCheckBox.args = {
+    id: "hello",
+    name: "hello",
+    fontSize: 20,
+    onClick: (e: any) => {
+        const { checked } = e.target;
+        console.log(checked);
+    },
 };
