@@ -1,0 +1,62 @@
+#vertical-marquee {
+    display: inline-block;
+
+    height: 110vh;
+    overflow: auto;
+
+    .marquee {
+        box-sizing: border-box;
+        height: 40px;
+        width: 100%;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        border: 1px solid #cecece;
+    }
+    .label {
+        padding: 10px;
+        float: left;
+        font-weight: bold;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            content: '';
+            display: block;
+            width: 1px;
+            height: 30px;
+            background-color: #cecece;
+        }
+    }
+    .rolling-box {
+        padding: 0 10px 0 0;
+        float: right;
+        width: 100px;
+        position: relative;
+
+        .rolling {
+            box-sizing: border-box;
+            position: absolute;
+            transform: translateY(0);
+            padding: 0;
+            width: inherit;
+            overflow: hidden;
+            list-style: none;
+            margin: 0;
+            transition: all 0.3s ease-in-out;
+    
+            li {
+                box-sizing: border-box;
+                padding-top: 10px;
+                height:30px;
+            }
+        }
+    }
+}
