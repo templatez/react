@@ -22,7 +22,7 @@ const Button = ({
   disabled,
 }: ButtonProps) => {
   return (
-    <div id="common-button">
+    <div className="tzr-common-button">
       <button
         className={classnames("btn")}
         onClick={onClick}

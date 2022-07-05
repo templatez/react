@@ -1,6 +1,7 @@
 {
     "name": "@templatez/react",
     "version": "0.0.5",
+    "keywords": ["react", "template", "component", "marquee", "button", "checkbox", "templatez"],
     "description": "",
     "scripts": {
         "rollup": "rollup -c",
@@ -47,7 +48,7 @@
         "type": "git",
         "url": "git+https://github.com/templatez/react.git"
     },
-    "author": "",
+    "author": "Hee",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/templatez/react/issues"
