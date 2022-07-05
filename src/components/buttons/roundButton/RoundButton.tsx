@@ -1,13 +1,13 @@
 import React from "react";
-import './RoundButton.scss';
-import classnames from 'classnames';
+import "./RoundButton.scss";
+import classnames from "classnames";
 
 export interface RoundButtonProps {
   label: string;
   size?: number;
-  backgroundColor?:string;
-  fontColor?:string;
-  fontSize?:number;
+  backgroundColor?: string;
+  fontColor?: string;
+  fontSize?: number;
   onClick: any;
   disabled?: boolean;
 }
@@ -22,20 +22,22 @@ const RoundButton = ({
   disabled,
 }: RoundButtonProps) => {
   return (
-    <div id="common-roundbutton">
+    <div className="tzr-common-roundbutton">
       <button
         className={classnames("btn")}
         onClick={onClick}
         style={{
-          padding:`${size || 10}px ${(size || 10) * 2}px`,
+          padding: `${size || 10}px ${(size || 10) * 2}px`,
           backgroundColor: `${backgroundColor}`,
           color: `${fontColor}`,
           fontSize: `${fontSize}px`,
         }}
         disabled={disabled}
-      >{label}</button>
+      >
+        {label}
+      </button>
     </div>
-  )
+  );
 };
 
 export default RoundButton;

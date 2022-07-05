@@ -40,7 +40,7 @@ const CirlcleCheckBox = ({
         checkRef.current.click();
     };
     return (
-        <div id="circle-checkbox">
+        <div className="tzr-circle-checkbox">
             <div className="checkbox-wrap">
                 <div
                     className={classnames(
