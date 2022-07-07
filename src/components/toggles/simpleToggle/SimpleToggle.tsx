@@ -13,6 +13,7 @@ export interface SimpleToggleProps {
     id: string;
   };
   onClick: (e: any) => void;
+  disabled?: boolean;
 }
 
 const SimpleToggle = ({
@@ -20,9 +21,11 @@ const SimpleToggle = ({
   leftData,
   rightData,
   onClick,
+  disabled,
 }: SimpleToggleProps) => {
   const [isActive, setIsActive] = useState("left");
   const onToggle = (e: any) => {
+    if (disabled) return;
     onClick(e.target.id);
     setIsActive(e.target.dataset.name);
   };

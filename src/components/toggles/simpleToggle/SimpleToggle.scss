@@ -1,28 +1,29 @@
 .tzr-simple-toggle {
-  display: inline-block;
+    display: inline-block;
 
-  .simple-toggle {
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    border: 1px solid #cecece;
+    .simple-toggle {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        border: 1px solid #cecece;
+        font-size: 1em;
 
-    .left {
-      display: inline-block;
-      padding: 1em;
-      cursor: pointer;
+        .left {
+            display: inline-block;
+            padding: 1em;
+            cursor: pointer;
+        }
+        .right {
+            display: inline-block;
+            padding: 1em;
+            cursor: pointer;
+        }
+        .active {
+            border-radius: 20px;
+            background-color: #00a0ff;
+            color: #fff;
+        }
+        .deactive {
+            color: #cecece;
+        }
     }
-    .right {
-      display: inline-block;
-      padding: 1em;
-      cursor: pointer;
-    }
-    .active {
-      border-radius: 20px;
-      background-color: #00a0ff;
-      color: #fff;
-    }
-    .deactive {
-      color: #cecece;
-    }
-  }
 }

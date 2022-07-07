@@ -1,7 +1,14 @@
 {
     "name": "@templatez/react",
-    "version": "0.0.6",
-    "keywords": ["react", "template", "component", "marquee", "button", "checkbox", "templatez"],
+    "version": "0.0.7",
+    "keywords": [
+        "react",
+        "template",
+        "component",
+        "button",
+        "checkbox",
+        "templatez"
+    ],
     "description": "",
     "scripts": {
         "rollup": "rollup -c",
