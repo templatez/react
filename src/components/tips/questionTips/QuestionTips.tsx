@@ -3,7 +3,7 @@ import "./QuestionTips.scss";
 
 export interface QuestionTipsProps {
     size?: number;
-    text?: string;
+    text?: any;
     side: string;
 }
 

@@ -1,60 +1,60 @@
 .tzr-question-tips {
-    display: inline-block;
+  display: inline-block;
 
-    .question-tips {
-        border: 1px solid #ff0000;
-        padding: 0.5em;
-        position: relative;
-        border-radius: 50%;
-        cursor: pointer;
+  .question-tips {
+    background-color: #ff0000;
+    padding: 0.5em;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
 
-        .question-mark {
-            color: #ff0000;
-            font-size: 0.8em;
-            font-weight: bold;
-            position: absolute;
-            left: 50%;
-            top: 55%;
-            transform: translate(-50%, -50%);
-        }
-
-        .upright-tips {
-            position: absolute;
-            left: 2em;
-            top: -150%;
-            background-color: #eaeaea;
-            padding: 0.8em;
-            font-size: 0.5em;
-            width: auto;
-            white-space: nowrap;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            border-top-left-radius: 10px;
-        }
-        .upleft-tips {
-            position: absolute;
-            right: 2em;
-            top: -150%;
-            background-color: #eaeaea;
-            padding: 0.8em;
-            font-size: 0.5em;
-            width: auto;
-            white-space: nowrap;
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 10px;
-            border-top-left-radius: 10px;
-        }
-        .middleright-tips {
-            position: absolute;
-            left: 2.3em;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: #eaeaea;
-            padding: 0.8em;
-            font-size: 0.5em;
-            width: auto;
-            white-space: nowrap;
-            border-radius: 10px;
-        }
+    .question-mark {
+      color: #fff;
+      font-size: 0.8em;
+      font-weight: bold;
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
     }
+
+    .upright-tips {
+      position: absolute;
+      left: 2em;
+      top: -150%;
+      background-color: #eaeaea;
+      padding: 0.8em;
+      font-size: 0.5em;
+      width: auto;
+      white-space: nowrap;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+    .upleft-tips {
+      position: absolute;
+      right: 2em;
+      top: -150%;
+      background-color: #eaeaea;
+      padding: 0.8em;
+      font-size: 0.5em;
+      width: auto;
+      white-space: nowrap;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+    .middleright-tips {
+      position: absolute;
+      left: 2.3em;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #eaeaea;
+      padding: 0.8em;
+      font-size: 0.5em;
+      width: auto;
+      white-space: nowrap;
+      border-radius: 10px;
+    }
+  }
 }
