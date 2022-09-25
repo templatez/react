@@ -1,0 +1,80 @@
+.tzr-simple-drawer {
+  display: inline-block;
+
+  .simple-drawer {
+    width: 100%;
+    min-width: 320px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li.list > .title {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      padding: 5px 10px;
+      word-break: break-all;
+      cursor: pointer;
+      width: 100%;
+
+      .left {
+        width: calc(100% - 25px);
+        float: left;
+      }
+      .right {
+        width: 25px;
+        float: right;
+        text-align: right;
+      }
+      .down_arrow {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #000;
+        border-top: 0;
+        border-left: 0;
+        transform: rotate(45deg);
+        vertical-align: top;
+        margin-right: 15px;
+      }
+      .up_arrow {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #000;
+        border-top: 0;
+        border-left: 0;
+        transform: rotate(-135deg);
+        vertical-align: top;
+        margin-right: 15px;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        width: 0.2em;
+        height: 0.2em;
+        background-color: #000;
+        position: absolute;
+        border-radius: 50%;
+        bottom: 0.8em;
+        left: 0;
+      }
+    }
+    li.list > .content {
+      padding: 0;
+      word-break: break-all;
+      transition: 0.3s;
+      background-color: #f6f6f6;
+    }
+    li.list > .open {
+      padding: 20px 5px;
+    }
+  }
+}
