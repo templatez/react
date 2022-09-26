@@ -4,3 +4,4 @@ export { default as CircleCheckBox } from "./checkBoxs/circleCheckBox";
 export { default as SimpleToggle } from "./toggles/simpleToggle";
 export { default as QuestionTips } from "./tips/questionTips";
 export { default as SimpleLoading } from "./loading/SimpleLoading";
+export { default as SimpleDrawer } from "./drawers/simpleDrawer";

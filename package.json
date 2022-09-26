@@ -1,6 +1,6 @@
 {
   "name": "@templatez/react",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "keywords": [
     "react",
     "template",
@@ -9,6 +9,7 @@
     "tips",
     "checkbox",
     "SimpleLoading",
+    "SimpleDrawer",
     "templatez"
   ],
   "description": "",
