@@ -23,14 +23,11 @@ const SimpleDrawer = ({ size, list, fontFamily }: SimpleDrawerProps) => {
       setDataList(tempArry);
     }
   }, []);
-  console.log(dataList);
   const onIsActiveHandler = (e: any) => {
     const { id } = e.target.closest("li").dataset;
-    console.log(id);
     if (id) {
       const temp: any = dataList.map((v: any) => {
         let result = { ...v };
-        console.log(v.id, id);
         if (v.id === Number(id)) {
           result = {
             ...v,
