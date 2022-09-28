@@ -16,14 +16,14 @@ const Template: ComponentStory<typeof SimpleDrawer> = (args) => (
 export const size15: any = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 size15.args = {
-  size: 12,
+  size: 15,
   fontFamily: "Jua",
   list: [
     {
       title:
         "처음에는 어떻게 만들었나요?sadaddasdasdasdasdadasdadasdasdsdsdsdsdsddsdsddssdsdsdsdsdsddsdsddsdsdsdsdsdsddsdsdd",
       content:
-        "asdasdadaasdasdadaasdasdadaasdasdadaasdasdadaasdasdadaasdasdada",
+        "asdasdadaasdasdadaasdasdadaasdaasdasdasdadsdadaasdasdadaasdasdadaasdasdada",
     },
     {
       title: "원하는 카테고리가 없습니다.",

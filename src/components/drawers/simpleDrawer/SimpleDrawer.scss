@@ -76,10 +76,11 @@
       word-break: break-all;
       transition: 0.3s;
       background-color: #f6f6f6;
-      font-size: 1.2em;
+      color: #000;
+      font-size: 1em;
     }
     li.list > .open {
-      padding: 20px 5px;
+      padding: 20px;
     }
   }
 }
